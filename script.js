@@ -1,4 +1,12 @@
-Perez-Thomas/algebra_app
+// Variables
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const percentageContainer = document.getElementById('percentage');
+const modelingExpressionsContainer = document.getElementById('modeling-expressions');
+const orderOfOperationsContainer = document.getElementById('order-of-operations');
+const evaluatingExpressionsContainer = document.getElementById('evaluating-expressions');
+const submitButton = document.getElementById('submit');
+
 
 
 // Functions
