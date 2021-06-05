@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Algebra 1 Review App</title>
+</head>
+<body> 
+
+<!-- Log-In - Begins -->
+<div class="center">
+  <button id="show-login">Login</button>
+</div>
+
+<div class="popup">
+  <div class="close-btn">&times;</div>
+  <div class="form"></div>
+</div>
+
+
+
+
+<!-- APP - Begins-->
+  <h1>Algebra 1 - Review App</h1>
+  <div class="quiz-container">
+    <!-- Part 1 - Basic Structure of Quiz - Part 1-->
+    <div id="quiz"></div>
+  </div>
+
+  <div class="buttons">
+    <button id="previous">Previous Question</button>
+    <button id="next">Next Question</button>
+    <button id="submit">Submit Quiz</button>
+  </div>
+      
+
+  <!-- ////////////////////////////// -->
+    <!-- localStorage scores saved -->
+    <div class="small-container">
+        <h1>Saved Data</h1>
+      <!-- Part 3 - Basic Structure of Quiz - Part 3-->
+      <!-- These are the results after taking quiz -->
+      <div id="results"></div>
+      <div id="percentage"></div>
+          <p id="submitDate"></p>
+        <!-- subTopic's Breakdown -->
+        <div id="modeling-expressions"></div>
+        <div id="order-of-operations"></div>
+        <div id="evaluating-expressions"></div>
+        <div id="scores"></div>
+
+          <h2>Total Scores Saved (Clear All to Erase)</h2>
+              <ul>
+              </ul>
+
+        <button id="clearButton">Clear Stored Results</button>
+    </div>
+    <!-- END - localStorage scores saved - END -->
+  <!-- ////////////////////////////// -->
+
+
+  <script src="script.js"></script>
+
+  <!-- CONNECTION TO mongoDB -->
+  <!-- <script src="app.js"></script> -->
+
+</body>
+
+</html>
