@@ -1,3 +1,75 @@
+window.addEventListener('load', (event) => {
+  console.log('page is fully loaded');
+  document.querySelector(".main-app").setAttribute("style", "filter: blur(5px)");
+  document.querySelector(".popup").classList.add("active");
+});
+
+// Close Button on Top Right Corner
+document.querySelector(".popup .close-btn").addEventListener("click",function(){
+  document.querySelector(".popup").classList.remove("active");
+  document.querySelector(".main-app").setAttribute("style", "filter: blur(0px)");
+});
+
+// Opening and Closing LogIn Button
+document.querySelector("#show-login").addEventListener("click",function(){
+  document.querySelector(".main-app").setAttribute("style", "filter: blur(5px)");
+  document.querySelector(".popup").classList.add("active");
+});
+
+// Checks that the Correct Username and Password are entered.
+// Add Additional Log-In and Period#: Input Row
+document.querySelector(".sign-in-button").addEventListener("click", function(event){
+  let login_email = document.querySelector("#email").value;
+  let login_password = document.querySelector("#password").value;
+      if (login_email === "student" && login_password === "student"){
+        alert("Student has logged in successfully.");
+        document.querySelector(".popup").classList.remove("active");
+        document.querySelector(".main-app").setAttribute("style", "filter: blur(0px)");
+      } else {
+        alert("Incorrect 'username' and/or 'password', contact your teacher to continue.");
+      };
+});
+
+// Pressing ENTER also submits LogIn Form...
+// Not working 100% accurately. Continue working on this 6-18-21
+document.querySelector('#password').onkeydown = function(e){
+   if(e.keyCode == 13){
+     console.log("You pressed ENTER and form Submitted");
+     document.querySelector(".popup").classList.remove("active");
+     document.querySelector(".main-app").setAttribute("style", "filter: blur(0px)");
+   } else {
+        alert("Incorrect 'username' and/or 'password', contact your teacher to continue.");
+   }
+};
+
+//  CONTINUE HERE
+// document.querySelector("#password").addEventListener("keyup", function(event){
+//   let login_email = document.querySelector("#email").value;
+//   let login_password = document.querySelector("#password").value;
+//       if ((login_email === "student" && login_password === "student" && event.keyCode === 13)){
+//         alert("Student has logged in successfully.");
+//         document.querySelector(".popup").classList.remove("active");
+//         document.querySelector(".main-app").setAttribute("style", "filter: blur(0px)");
+//         event.preventDefault();
+//       } else {
+//         alert("Incorrect 'username' and/or 'password', contact your teacher to continue.");
+//       };
+// });
+
+
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+
 // Variables
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
@@ -401,7 +473,7 @@ function showResults(){
     } else if (currentQuestion.subTopic === "evaluating-expressions" && userAnswer === currentQuestion.correctAnswer){
       evaluatingExpressionsCorrect++;
     } else{
-      document.querySelector("html").style.backgroundColor = "violet";    
+      document.querySelector("body").style.backgroundColor = "violet";    
     };
   });
 

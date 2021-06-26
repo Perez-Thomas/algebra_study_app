@@ -8,79 +8,107 @@
 </head>
 <body> 
 
-<!-- Log-In - Begins -->
-<!-- List of 10 logins that work and save final scores to each login -->
-<div class="log-in-body">
-  <div class="center">
-    <button id="show-login">Login</button>
-  </div>
   <div class="popup">
-    <div class="popup_2">
-      <div class="close-btn">&times;</div>
-      <div class="form">
-        <h2>Log In</h2>
-        <div class="form-element">
-          <label for="email">Email</label>
-          <input type="text id="email" placeholder="Enter email">
-        </div>
-        <div class="form-element">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter password">
-        </div>
-        <div class="form-element">
-          <input type="checkbox" id="remember-me">
-          <label for="remember-me">Remember Me</label>
-        </div>
-        <div class="form-element">
-          <button>Sign In</button>
-        </div>
-        <div class="form-element">
-          <a href = "#">Forgot Password?</a>
-        </div>
+    <div class="close-btn">&times;</div>
+    <div class="form">
+      <h2>Log in</h2>
+      <div class="form-element">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter email">
+      </div>
+      <div class="form-element">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+      </div>
+      <div class="form-element">
+        <input type="checkbox" id="remember-me">
+        <label for="remember-me">Remember me</label>
+      </div>
+      <div class="form-element">
+        <button class="sign-in-button">Sign in</button>
+      </div>
+      <div class="form-element">
+        <a href="#">Forgot password?</a>
       </div>
     </div>
   </div>
-</div>
-<!-- Log-In - Ends -->
-
-
-
-
-<!-- APP - Begins-->
-  <h1>Algebra 1 - Review App</h1>
-  <div class="quiz-container">
-    <!-- Part 1 - Basic Structure of Quiz - Part 1-->
-    <div id="quiz"></div>
-  </div>
-
-  <div class="buttons">
-    <button id="previous">Previous Question</button>
-    <button id="next">Next Question</button>
-    <button id="submit">Submit Quiz</button>
-  </div>
-      
-
-  <!-- ////////////////////////////// -->
-    <!-- localStorage scores saved -->
-    <div class="small-container">
-        <h1>Saved Data</h1>
-      <!-- Part 3 - Basic Structure of Quiz - Part 3-->
-      <!-- These are the results after taking quiz -->
-      <div id="results"></div>
-      <div id="percentage"></div>
-          <p id="submitDate"></p>
+  
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  
+  
+  
+  
+  <!-- APP - Begins-->
+  
+    <div class= "main-app">
+      <div class="top-banner-container">
+        <div class="top-banner">
+            <h1>Algebra 1 - Review App</h1>  
+              <button class="center" id="show-login">Login</button>
+        </div>
+      </div>
+  
+      <div class="quiz-container">
+          <!-- Part 1 - Basic Structure of Quiz - Part 1-->
+          <div id="quiz"></div>
+      </div>
+  
+        <!--  Distance between Answer Choices and Buttons  -->
+  
+      <!-- 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br> 
+      -->
+      <div class="buttons-container">
+      </div>
+  
+      <div class="buttons">
+        <button id="previous">Previous Question</button>
+        <button id="next">Next Question</button>
+        <button id="submit">Submit Quiz</button>
+      </div>
+   
+        
+  
+    <!-- ////////////////////////////// -->
+      <!-- localStorage scores saved -->
+      <div class="small-container">
+        <h1>Saved Data 
+          <button id="clearButton">Clear Results</button>        
+        </h1>
+       
+        
+        <!-- Part 3 - Basic Structure of Quiz - Part 3-->
+        <!-- These are the results after taking quiz -->
+        <div id="results"></div>
+        <div id="percentage"></div>
+        <p id="submitDate"></p>
         <!-- subTopic's Breakdown -->
         <div id="modeling-expressions"></div>
         <div id="order-of-operations"></div>
         <div id="evaluating-expressions"></div>
         <div id="scores"></div>
-
-          <h2>Total Scores Saved (Clear All to Erase)</h2>
-              <ul>
-              </ul>
-
-        <button id="clearButton">Clear Stored Results</button>
-    </div>
+  
+        <h2 class="">Total Scores Saved (Clear All to Erase)</h2>
+          <ul>
+          </ul>
+      </div>
+  
+  </div>
     <!-- END - localStorage scores saved - END -->
   <!-- ////////////////////////////// -->
 
