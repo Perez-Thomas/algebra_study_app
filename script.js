@@ -79,8 +79,6 @@ const orderOfOperationsContainer = document.getElementById('order-of-operations'
 const evaluatingExpressionsContainer = document.getElementById('evaluating-expressions');
 const submitButton = document.getElementById('submit');
 
-
-
 // Functions
 function buildQuiz(){
   // variable to store the HTML output
