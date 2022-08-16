@@ -1,23 +1,21 @@
-
-.top-banner-container{
-  background-color: #ADD8E6;
+.top-banner-container {
+  background-color: #cccccc;
   width: 100vw;
-  padding-top:1vh;
+  padding-top: 1vh;
 }
 
-.top-banner{
-    white-space: nowrap;
-    overflow-y: hidden;
-    display: inline-block;
-    width: 100vw;
-    box-shadow: 2px rgba(0,0,0,0.09);
+.top-banner {
+  white-space: nowrap;
+  overflow-y: hidden;
+  display: inline-block;
+  width: 100vw;
+  box-shadow: 2px rgba(0, 0, 0, 0.09);
 }
 
 .top-banner h1 {
-    display: inline-block;
-    height: 100%;
-    padding-top: 1%;
-
+  display: inline-block;
+  height: 100%;
+  padding-top: 1%;
 }
 
 .top-banner button {
@@ -25,27 +23,24 @@
   background-color: red;
 }
 
-
-
-
 /* Log-In Popup Button */
 * {
-  margin:0px;
-  padding:0px;
-  box-sizing:border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-  font-family:"Raleway",sans-serif;
-  height:100vh;
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
 }
 
-#email{
-  background-color: #f0ead6;
+#email {
+  background-color: #eeeeee;
 }
 
-#password{
-    background-color: #f0ead6;
+#password {
+  background-color: #eeeeee;
 }
 
 .center button {
@@ -59,97 +54,95 @@ body {
   border-radius: 5px;
 }
 .popup {
-  position:absolute;
+  position: absolute;
   top: -150%;
-  left:50%;
-  opacity:0;
-  transform:translate(-50%,-50%) scale(1.25);
-  width:85%;
-  padding:10px 20px;
-  background:lightblue;
-  box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
-  border-radius:10px;
-  transition:top 0ms ease-in-out 200ms,
-             opacity 200ms ease-in-out 0ms,
-             transform 200ms ease-in-out 0ms; 
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 85%;
+  padding: 10px 20px;
+  background: #cccccc;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
 }
 
 .popup.active {
   z-index: 4;
-  top:50%;
-  opacity:1;
-  transform:translate(-50%,-50%) scale(1);
-  transition:top 0ms ease-in-out 0ms,
-             opacity 200ms ease-in-out 0ms,
-             transform 200ms ease-in-out 0ms;
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
 }
 
 .popup .close-btn {
-  position:absolute;
+  position: absolute;
   font-size: 125%;
-  top:10px;
-  right:10px;
-  width:15px;
-  height:15px;
-  background:#888;
-  color:white;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #888;
+  color: white;
   background-color: red;
-  text-align:center;
-  line-height:15px;
-  border-radius:5px;
-  cursor:pointer;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .popup .form h2 {
-  text-align:center;
-  color:#222;
-  margin:10px 0px 20px;
-  font-size:25px;
+  text-align: center;
+  color: #222;
+  margin: 10px 0px 20px;
+  font-size: 25px;
 }
 
 .popup .form .form-element {
-  margin:15px 0px;
+  margin: 15px 0px;
 }
 
 .popup .form .form-element label {
-  font-size:14px;
-  color:#222;
+  font-size: 14px;
+  color: #222;
 }
 
 .popup .form .form-element input[type="text"],
 .popup .form .form-element input[type="password"] {
-  margin-top:5px;
-  display:block;
-  width:100%;
-  padding:10px;
-  outline:none;
-  border:1px solid #aaa;
-  border-radius:5px;
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
 
 .popup .form .form-element input[type="checkbox"] {
-  margin-right:5px;
+  margin-right: 5px;
 }
 
 .popup .form .form-element button {
-  width:100%;
-  height:40px;
-  border:none;
-  outline:none;
-  font-size:16px;
-  background:#222;
-  color:#f5f5f5;
-  border-radius:10px;
-  cursor:pointer;
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #222;
+  color: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .popup .form .form-element a {
-  display:block;
-  text-align:right;
-  font-size:15px;
-  color:#1a79ca;
-  text-decoration:none;
-  font-weight:600;
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  color: #1a79ca;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /*  */
@@ -166,69 +159,65 @@ body {
 /*  */
 
 /* STUDY APP */
-body{
-    font-size: 3vw;
-    font-family: Arial, Helvetica, sans-serif;
-	  color: rgb(0, 0, 0);
-    width: 100%;
-    margin-right: 5%;
-    text-align: center;
-    background-color: #f0ead6;
+body {
+  font-size: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  margin-right: 5%;
+  text-align: center;
+  background-color: #eeeeee;
 }
 
-h2{
-    font-size: 1em;
-    padding: 2%;
+h2 {
+  font-size: 1em;
+  padding: 2%;
 }
 
-.question{
+.question {
   font-size: 1.5em;
   margin-top: 2%;
-
 }
 
 .answers {
   position: relative;
   text-align: left;
   display: inline-block;
-  font-size:100%;
-    margin-top: 2%;
-
-
+  font-size: 100%;
+  margin-top: 2%;
 }
 
-.answers label{
+.answers label {
   display: block;
 }
 
-.buttons{
+.buttons {
   z-index: 3;
   padding: 2%;
-
 }
 
-.buttons-container{
-  margin-top:20%;
+.buttons-container {
+  margin-top: 20%;
 }
 
-button{
+button {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-	font-size: 100%;
-	background-color: #4CAF50;
-	color: white;
-	padding: 1%;
-	cursor: pointer;
-	margin-bottom: 2%;
-  border-radius:5px;
+  font-size: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 1%;
+  cursor: pointer;
+  margin-bottom: 2%;
+  border-radius: 5px;
 }
 
-button:hover{
-    background-color: rgb(193, 0, 0);
-    color: white
+button:hover {
+  background-color: rgb(193, 0, 0);
+  color: white;
 }
 
-.buttons{
+.buttons {
   /* z-index:1 places buttons on same level as .questions */
   z-index: 2;
 }
@@ -244,37 +233,39 @@ button:hover{
 }
 .active-slide {
   opacity: 1;
-  z-index:2;
-
+  z-index: 2;
 }
 
-.small-container h1{
-  background-color: #ADD8E6;
+.small-container h1 {
+  background-color: #cccccc;
   width: 100vw;
-  box-shadow: 2px 5px 5px rgba(0,0,0,0.09);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.09);
   padding-top: 1.5%;
   margin-bottom: 3%;
-  
 }
 
-.small-container #clearButton{
+.small-container #clearButton {
   font-size: 50%;
   font-weight: 600;
   color: white;
   background: red;
   cursor: pointer;
-  border-radius: 5px;  
-  margin-left:30%;
+  border-radius: 5px;
+  margin-left: 30%;
 }
 
 .quiz-container {
   position: relative;
   height: 10em;
   font-size: 100%;
-
 }
 
-#results, #percentage, #modeling-expressions, #order-of-operations, #evaluating-expressions, #submitDate{
+#results,
+#percentage,
+#modeling-expressions,
+#order-of-operations,
+#evaluating-expressions,
+#submitDate {
   padding-left: 1em;
   text-align: left;
 }
