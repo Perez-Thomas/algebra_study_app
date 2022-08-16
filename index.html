@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Algebra 1 Review App</title>
-</head>
-<body> 
-
-  <div class="popup">
-    <div class="close-btn">&times;</div>
-    <div class="form">
-      <h2>Log in</h2>
-      <div class="form-element">
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Enter email">
-      </div>
-      <div class="form-element">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter password">
-      </div>
-      <div class="form-element">
-        <input type="checkbox" id="remember-me">
-        <label for="remember-me">Remember me</label>
-      </div>
-      <div class="form-element">
-        <button class="sign-in-button">Sign in</button>
-      </div>
-      <div class="form-element">
-        <a href="#">Forgot password?</a>
-      </div>
-    </div>
-  </div>
-  
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  
-  
-  
-  
-  <!-- APP - Begins-->
-  
-    <div class= "main-app">
-      <div class="top-banner-container">
-        <div class="top-banner">
-            <h1>Algebra 1 - Review App</h1>  
-              <button class="center" id="show-login">Login</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Algebra 1 Review App</title>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>Log in</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Type the word 'email' " />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Type the word 'password' "
+          />
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+          <button class="sign-in-button">Sign in</button>
+        </div>
+        <div class="form-element">
+          <a href="#">Forgot password?</a>
         </div>
       </div>
-  
-      <div class="quiz-container">
-          <!-- Part 1 - Basic Structure of Quiz - Part 1-->
-          <div id="quiz"></div>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <!-- APP - Begins-->
+
+    <div class="main-app">
+      <div class="top-banner-container">
+        <div class="top-banner">
+          <h1>Algebra 1 - Review App</h1>
+          <button class="center" id="show-login">Login</button>
+        </div>
       </div>
-  
-        <!--  Distance between Answer Choices and Buttons  -->
-  
+
+      <div class="quiz-container">
+        <!-- Part 1 - Basic Structure of Quiz - Part 1-->
+        <div id="quiz"></div>
+      </div>
+
+      <!--  Distance between Answer Choices and Buttons  -->
+
       <!-- 
       <br>
       <br>
@@ -73,25 +73,22 @@
       <br>
       <br> 
       -->
-      <div class="buttons-container">
-      </div>
-  
+      <div class="buttons-container"></div>
+
       <div class="buttons">
         <button id="previous">Previous Question</button>
         <button id="next">Next Question</button>
         <button id="submit">Submit Quiz</button>
       </div>
-   
-        
-  
-    <!-- ////////////////////////////// -->
+
+      <!-- ////////////////////////////// -->
       <!-- localStorage scores saved -->
       <div class="small-container">
-        <h1>Saved Data 
-          <button id="clearButton">Clear Results</button>        
+        <h1>
+          Saved Data
+          <button id="clearButton">Clear Results</button>
         </h1>
-       
-        
+
         <!-- Part 3 - Basic Structure of Quiz - Part 3-->
         <!-- These are the results after taking quiz -->
         <div id="results"></div>
@@ -102,22 +99,17 @@
         <div id="order-of-operations"></div>
         <div id="evaluating-expressions"></div>
         <div id="scores"></div>
-  
+
         <h2 class="">Total Scores Saved (Clear All to Erase)</h2>
-          <ul>
-          </ul>
+        <ul></ul>
       </div>
-  
-  </div>
+    </div>
     <!-- END - localStorage scores saved - END -->
-  <!-- ////////////////////////////// -->
+    <!-- ////////////////////////////// -->
 
+    <script src="script.js"></script>
 
-  <script src="script.js"></script>
-
-  <!-- CONNECTION TO mongoDB -->
-  <!-- <script src="app.js"></script> -->
-
-</body>
-
+    <!-- CONNECTION TO mongoDB -->
+    <!-- <script src="app.js"></script> -->
+  </body>
 </html>
