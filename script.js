@@ -494,7 +494,7 @@ function showResults() {
     ) {
       evaluatingExpressionsCorrect++;
     } else {
-      document.querySelector("body").style.backgroundColor = "violet";
+      document.querySelector("body").style.backgroundColor = "#CCCCCC";
     }
   });
 
