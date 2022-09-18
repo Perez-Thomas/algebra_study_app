@@ -1,10 +1,10 @@
-window.addEventListener("load", (event) => {
-  console.log("page is fully loaded");
-  document
-    .querySelector(".main-app")
-    .setAttribute("style", "filter: blur(5px)");
-  document.querySelector(".popup").classList.add("active");
-});
+// window.addEventListener("load", (event) => {
+//   console.log("page is fully loaded");
+//   document
+//     .querySelector(".main-app")
+//     .setAttribute("style", "filter: blur(5px)");
+//   document.querySelector(".popup").classList.add("active");
+// });
 
 // Close Button on Top Right Corner
 document
